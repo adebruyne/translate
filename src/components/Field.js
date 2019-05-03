@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LanguageContext from '../context/LanguageContext';
 export default class Field extends Component {
-    static ContextType = LanguageContext;
+    static contextType = LanguageContext;
 
     render() {
         const text = this.context === 'english' ? 'Name' : 'Naam';
